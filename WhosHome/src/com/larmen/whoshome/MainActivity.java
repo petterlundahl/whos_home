@@ -10,6 +10,8 @@ import android.view.Menu;
  * @author Petter
  */
 public class MainActivity extends Activity {
+	
+	//Testing first commit
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
