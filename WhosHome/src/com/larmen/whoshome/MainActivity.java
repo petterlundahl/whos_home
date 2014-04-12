@@ -12,7 +12,8 @@ import android.view.Menu;
 public class MainActivity extends Activity {
 	
 	//Testing first commit
-
+	//Also testing first commit
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
