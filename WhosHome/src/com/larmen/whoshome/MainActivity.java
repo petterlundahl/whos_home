@@ -2,22 +2,38 @@ package com.larmen.whoshome;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.view.Menu;
+import android.widget.FrameLayout;
 
 /**
  * This is where the magic happens...
  * 
  * @author Petter
  */
-public class MainActivity extends Activity {
+public class MainActivity extends Activity {	
 	
-	//Testing first commit
-	//Also testing first commit
+	private FrameLayout fragmentHolder;
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_main);		
+		
+		 if (findViewById(R.id.fragment_holder) != null) {
+	            
+	            if (savedInstanceState != null) {
+	                return;
+	            }
+	            
+	            MainViewFragment mainFragment = new MainViewFragment();
+	            getFragmentManager().beginTransaction()
+	                    .add(R.id.fragment_holder, mainFragment).commit();
+	            
+	        }
+		
 	}
 
 	@Override
