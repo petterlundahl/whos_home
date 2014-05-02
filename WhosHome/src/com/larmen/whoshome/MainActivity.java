@@ -22,7 +22,6 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
 		ActionBar actionBar = getActionBar();
 		actionBar.hide();
 
@@ -53,7 +52,7 @@ public class MainActivity extends Activity {
 
 		if (requestedTypeface.equals("hHero")) {
 			return hHero;
-		}else{
+		} else {
 			return null;
 		}
 	}
