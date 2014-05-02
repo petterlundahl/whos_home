@@ -15,6 +15,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		new NetworkHandler().getPeople("12:13:ff:77:89:13");
+		
 	}
 
 	@Override
